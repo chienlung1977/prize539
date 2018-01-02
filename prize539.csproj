@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C801BEA-EEFC-47E2-909B-EC83064F0260}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>com.oli365.prize</RootNamespace>
+    <AssemblyName>prize539</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\..\03_CODEING\ASPNET\LottoAnalysisConsole\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\ContactUs.aspx" />
+    <Content Include="Account\DownloadApp.aspx" />
+    <Content Include="Account\FunctionList.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\NumberList.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\Register_Member.aspx" />
+    <Content Include="Account\ReSendCode.aspx" />
+    <Content Include="Account\Verify.aspx" />
+    <Content Include="Account\VersionHistory.aspx" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\ErrorLog.aspx" />
+    <Content Include="Admin\LoginHistoryList.aspx" />
+    <Content Include="Admin\MemberList.aspx" />
+    <Content Include="Admin\NumberList.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Img\p1.png" />
+    <Content Include="Img\p2.png" />
+    <Content Include="Img\p3.png" />
+    <Content Include="Img\p4.png" />
+    <Content Include="Img\p5.png" />
+    <Content Include="Img\p6.png" />
+    <Content Include="Img\qrcode.png" />
+    <Content Include="Member\ChoiceNumbers.aspx" />
+    <Content Include="Member\Dark539NumberRateList.aspx" />
+    <Content Include="Member\Dark539NextList.aspx" />
+    <Content Include="Member\Dark539Next.aspx" />
+    <Content Include="Member\NextForecastAnalysis.aspx" />
+    <Content Include="Member\SuperLotto.aspx" />
+    <Content Include="Member\Lotto649List.aspx" />
+    <Content Include="Member\Settings.aspx" />
+    <Content Include="Member\MemberMenu.ascx" />
+    <Content Include="Member\NextNumberRList.aspx" />
+    <Content Include="Member\Prize539Next.aspx" />
+    <Content Include="Member\NextNumberList.aspx" />
+    <Content Include="Member\NumberList.aspx" />
+    <Content Include="Member\AllForecastAnalysis.aspx" />
+    <Content Include="obj\Debug\com.oli365.nc.web.dll" />
+    <Content Include="obj\Debug\com.oli365.nc.web.pdb" />
+    <Content Include="obj\Debug\myweb.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\prize539.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\prize539.dll" />
+    <Content Include="obj\Debug\prize539.pdb" />
+    <Content Include="Private.aspx" />
+    <Content Include="Scripts\c.js" />
+    <Content Include="Scripts\datepicker-zh-TW.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <None Include="Properties\PublishProfiles\publish to web.pubxml" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\DownloadApp.aspx.cs">
+      <DependentUpon>DownloadApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\DownloadApp.aspx.designer.cs">
+      <DependentUpon>DownloadApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FunctionList.aspx.cs">
+      <DependentUpon>FunctionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\FunctionList.aspx.designer.cs">
+      <DependentUpon>FunctionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\NumberList.aspx.cs">
+      <DependentUpon>NumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\NumberList.aspx.designer.cs">
+      <DependentUpon>NumberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register_Member.aspx.cs">
+      <DependentUpon>Register_Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ReSendCode.aspx.cs">
+      <DependentUpon>ReSendCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ReSendCode.aspx.designer.cs">
+      <DependentUpon>ReSendCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Verify.aspx.cs">
+      <DependentUpon>Verify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VersionHistory.aspx.cs">
+      <DependentUpon>VersionHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VersionHistory.aspx.designer.cs">
+      <DependentUpon>VersionHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ErrorLog.aspx.cs">
+      <DependentUpon>ErrorLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ErrorLog.aspx.designer.cs">
+      <DependentUpon>ErrorLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoginHistoryList.aspx.cs">
+      <DependentUpon>LoginHistoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoginHistoryList.aspx.designer.cs">
+      <DependentUpon>LoginHistoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemberList.aspx.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemberList.aspx.designer.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NumberList.aspx.cs">
+      <DependentUpon>NumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NumberList.aspx.designer.cs">
+      <DependentUpon>NumberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app_code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app_code\Des3.cs" />
+    <Compile Include="app_code\Helper.cs" />
+    <Compile Include="app_code\LoginHistoryUtility.cs" />
+    <Compile Include="app_code\Mariasql.cs" />
+    <Compile Include="app_code\NumberUtility.cs" />
+    <Compile Include="app_code\Para.cs" />
+    <Compile Include="app_code\Settings.cs" />
+    <Compile Include="app_code\User.cs" />
+    <Compile Include="Member\ChoiceNumbers.aspx.cs">
+      <DependentUpon>ChoiceNumbers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ChoiceNumbers.aspx.designer.cs">
+      <DependentUpon>ChoiceNumbers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Dark539NumberRateList.aspx.cs">
+      <DependentUpon>Dark539NumberRateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Dark539NumberRateList.aspx.designer.cs">
+      <DependentUpon>Dark539NumberRateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Dark539NextList.aspx.cs">
+      <DependentUpon>Dark539NextList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Dark539NextList.aspx.designer.cs">
+      <DependentUpon>Dark539NextList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Dark539Next.aspx.cs">
+      <DependentUpon>Dark539Next.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Dark539Next.aspx.designer.cs">
+      <DependentUpon>Dark539Next.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\NextForecastAnalysis.aspx.cs">
+      <DependentUpon>NextForecastAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\NextForecastAnalysis.aspx.designer.cs">
+      <DependentUpon>NextForecastAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\SuperLotto.aspx.cs">
+      <DependentUpon>SuperLotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\SuperLotto.aspx.designer.cs">
+      <DependentUpon>SuperLotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Lotto649List.aspx.cs">
+      <DependentUpon>Lotto649List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Lotto649List.aspx.designer.cs">
+      <DependentUpon>Lotto649List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Private.aspx.cs">
+      <DependentUpon>Private.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app_code\UserController.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app_code\Utility.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberMenu.ascx.cs">
+      <DependentUpon>MemberMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemberMenu.ascx.designer.cs">
+      <DependentUpon>MemberMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\NextNumberRList.aspx.cs">
+      <DependentUpon>NextNumberRList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\NextNumberRList.aspx.designer.cs">
+      <DependentUpon>NextNumberRList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Prize539Next.aspx.cs">
+      <DependentUpon>Prize539Next.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Prize539Next.aspx.designer.cs">
+      <DependentUpon>Prize539Next.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\NextNumberList.aspx.cs">
+      <DependentUpon>NextNumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\NextNumberList.aspx.designer.cs">
+      <DependentUpon>NextNumberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\NumberList.aspx.cs">
+      <DependentUpon>NumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\NumberList.aspx.designer.cs">
+      <DependentUpon>NumberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\AllForecastAnalysis.aspx.cs">
+      <DependentUpon>AllForecastAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\AllForecastAnalysis.aspx.designer.cs">
+      <DependentUpon>AllForecastAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="AdminSite.Master" />
+    <Content Include="Admin\Web.config" />
+    <Content Include="Files\FOOD.csv" />
+    <Content Include="Member\Web.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Files\Upload\" />
+    <Folder Include="Images\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\03_CODEING\ASPNET\CORE\Core\CoreLib\CoreLib.csproj">
+      <Project>{031c490b-5ba3-4481-9afd-dabea48ac8a7}</Project>
+      <Name>CoreLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3577/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+</Project>
