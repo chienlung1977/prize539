@@ -35,7 +35,7 @@
           幸運號碼猜猜看
                 </h1>
                 </div>
-                 <div>
+                 <div style="width:728px;margin:0 auto">
 
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 橫幅728*90 -->
@@ -65,30 +65,21 @@
                         <asp:MenuItem  NavigateUrl="~/Member/Settings.aspx" Text="參數設定"/>
                        
                         <asp:MenuItem   Text="威力彩"  Selectable="false" >
-                            <asp:MenuItem  NavigateUrl="~/Member/SuperLotto.aspx" Text="開獎號碼"/>
+                            <asp:MenuItem  NavigateUrl="~/Guest/SuperLotto.aspx" Text="歷史號碼"/>
                             </asp:MenuItem>
-                        <asp:MenuItem  Selectable="false" Text="大樂透"  >
-                             <asp:MenuItem  NavigateUrl="~/Member/Lotto649List.aspx" Text="開獎號碼"/>
+                        <asp:MenuItem Selectable="false"   Text="大樂透"  >
+                             <asp:MenuItem  NavigateUrl="~/Guest/Lotto649List.aspx" Text="歷史號碼"/>
                            
                             </asp:MenuItem>
                         <asp:MenuItem  Selectable="false" Text="今彩539">
-                            <asp:MenuItem  NavigateUrl="~/Member/NumberList.aspx" Text="開獎號碼"/>
+                            <asp:MenuItem  NavigateUrl="~/Guest/NumberList.aspx" Text="歷史號碼"/>
                             <asp:MenuItem  NavigateUrl="~/Member/Prize539Next.aspx" Text="下期預測"/>
                             <asp:MenuItem  NavigateUrl="~/Member/NextNumberList.aspx" Text="歷史分析"/>
                             
                              
                         </asp:MenuItem>
-                        <asp:MenuItem  Text="暗彩539" Selectable="false">
-                            <asp:MenuItem  NavigateUrl="~/Member/NumberList.aspx" Text="開獎號碼"/>
-                            <asp:MenuItem  NavigateUrl="~/Member/Dark539Next.aspx" Text="下期預測" />
-                            <asp:MenuItem  NavigateUrl="~/Member/Dark539NextList.aspx" Text="歷史分析"/>
-                            <asp:MenuItem  Selectable="false" Text="全期分析" >
-                                <asp:MenuItem  NavigateUrl="~/Member/Dark539NumberRateList.aspx" Text="開獎機率"/>
-                            </asp:MenuItem>
-                        </asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/Account/ContactUs.aspx" Text="連絡我們" />
-                        
-                        
+                     
+                       <asp:MenuItem  NavigateUrl="~/Guest/VersionList.aspx" Text="版本記錄" />
 
                     </Items>
                 </asp:Menu>
@@ -99,6 +90,19 @@
             <asp:MenuItem  NavigateUrl="~/Member/AllForecastAnalysis.aspx" Text="全期預測分析"/>
                             <asp:MenuItem  NavigateUrl="~/Member/NextForecastAnalysis.aspx" Text="下期預測分析"/>
 
+
+               <asp:MenuItem  Text="暗彩539" Selectable="false"  Enabled="false">
+                            <asp:MenuItem  NavigateUrl="~/Member/NumberList.aspx" Text="開獎號碼"/>
+                            <asp:MenuItem  NavigateUrl="~/Member/Dark539Next.aspx" Text="下期預測" />
+                            <asp:MenuItem  NavigateUrl="~/Member/Dark539NextList.aspx" Text="歷史分析"/>
+                            <asp:MenuItem  Selectable="false" Text="全期分析" >
+                                <asp:MenuItem  NavigateUrl="~/Member/Dark539NumberRateList.aspx" Text="開獎機率"/>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+
+             <asp:MenuItem  NavigateUrl="~/Account/ContactUs.aspx" Text="連絡我們" />
+                        
+                        
             -->
         <div class="main">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
@@ -111,7 +115,16 @@
         </div>
     </div>
     <div class="footer">
-      
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 自動調整廣告 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4468644264762001"
+     data-ad-slot="6186939563"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
     </div>
     </form>
 </body>

@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div style="text-align:center;font-size:200%">
-        開獎號碼
+        開獎號碼(每日晚上10:00開始更新)
         </div>
    <div >
        <table width="100%">
