@@ -58,23 +58,27 @@ public class BasePage : System.Web.UI.Page
     protected void sendMail(string subject, string body)
     {
 
-        this.sendMail("chienlung1977@gmail.com", subject, body);
+        this.sendMail("admin@oli365.com", subject, body);
 
     }
 
     protected void sendMail(string to, string subject, string body)
     {
 
+        /*
         MailClient mc = new MailClient("smtp.gmail.com", 587, "nsking365@gmail.com", "vvtfbyuq0416");
         MailContent c = new MailContent();
         c.From = "nsking365@gmail.com";
-        c.FromDisplayName = "幸運號碼猜猜看";
+        c.FromDisplayName = "幸運號碼猜猜看通知";
         c.To = to;
         c.Subject = subject;
         c.Body = body;
         c.EnableSsl = true;
-        c.BodyFormat = MailContent.BODY_FORMAT.HTML;
+        c.BodyFormat = MailContent.BODY_FORMAT.TEXT;
         mc.Send(c);
+        */
+        CoreLib.Smtp.MailHost mh = new CoreLib.Smtp.MailHost();
+        mh.Send("service@oli365.com", to, subject, body);
 
     }
 

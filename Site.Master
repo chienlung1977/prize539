@@ -30,12 +30,12 @@
     <div class="page">
         <div class="header">
             <div class="title">
-                <div style="float:left">
+                <div style="float:left;height:90px">
                 <h1>
           幸運號碼猜猜看
                 </h1>
                 </div>
-                 <div style="width:728px;margin:0 auto">
+                 <div style="width:728px;float:left;height:90px;margin:0 auto">
 
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 橫幅728*90 -->
@@ -58,6 +58,7 @@
 &nbsp;<asp:LinkButton ID="lnkLogout" runat="server" onclick="LinkButton1_Click" Visible="False">登出</asp:LinkButton>
                 
             </div>
+
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
